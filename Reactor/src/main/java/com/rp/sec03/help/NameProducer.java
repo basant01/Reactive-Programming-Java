@@ -7,9 +7,6 @@ import java.util.function.Consumer;
 // used when you have more functionality and don't want put in one lambda expression for fluxSink
 public class NameProducer implements Consumer<FluxSink<String>> {
 
-    public static void main(String[] args) {
-
-    }
 FluxSink<String> fluxSink;
 
     // act as constructor

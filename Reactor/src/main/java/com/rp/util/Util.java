@@ -31,6 +31,14 @@ public static void sleep(int t) {
         }
 }
 
+    public static void sleepmilli(int t) {
+        try{
+            Thread.sleep(t);}
+        catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
 public static Subscriber<Object> subscriber()
 {
     return new DefaultSubscriber();
